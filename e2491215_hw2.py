@@ -157,7 +157,7 @@ def main():
         print(f"\nClass weights: {class_weights}")
         
         train_texts, val_texts, train_labels, val_labels = train_test_split(
-            texts, labels, test_size=0.1, random_state=42, stratify=labels
+            texts, labels, test_size=0.2, random_state=42, stratify=labels
         )
         
         print(f"\nTraining set size: {len(train_texts)}")
